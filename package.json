@@ -1,6 +1,6 @@
 {
   "name": "react-native-app-permission-status",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Get all app permission status in react-native (Android only)",
   "main": "index.js",
   "repository": {
