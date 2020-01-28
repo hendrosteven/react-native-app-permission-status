@@ -24,7 +24,7 @@ public class RNAppPermissionStatusModule extends ReactContextBaseJavaModule {
 
     @Override
     public String getName() {
-        return "AppPermissionStatus";
+        return "RNAppPermissionStatusModule";
     }
 
     @ReactMethod

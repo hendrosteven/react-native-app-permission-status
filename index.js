@@ -1,19 +1,10 @@
-/**
- * @providesModule react-native-app-permission-status
- */
 
-var ReactNative = require('react-native');
+import { NativeModules } from 'react-native';
 
-if (ReactNative.Platform.OS === "android") {
-    module.exports = {
-        getImei: function () {
-            return ReactNative.NativeModules.AppPermissionStatus.getAppsStatus();
-        }
-    };
-} else {
-    module.exports = {
-        getImei: function () {
-            throw new Error("Not supported");
-        }
+const { RNAppPermissionStatusModule } = NativeModules;
+
+export default {
+    getAppsStatus : function(){
+        RNAppPermissionStatusModule.getAppsStatus();
     }
 }
