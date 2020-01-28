@@ -7,7 +7,7 @@ var ReactNative = require('react-native');
 if (ReactNative.Platform.OS === "android") {
     module.exports = {
         getImei: function () {
-            return ReactNative.NativeModules.getAppsStatus.getAppsStatus();
+            return ReactNative.NativeModules.AppPermissionStatus.getAppsStatus();
         }
     };
 } else {
